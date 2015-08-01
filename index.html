@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="./main.css">
+
+<div class="flex-container">
+  <header class="flex-item">
+
+<ul>
+    <li><a>View Music</a>  |</li>
+    <li><a href="#">Add Music</a>  |  </li>
+    <li><a href="#">Profile</a></li>
+ </ul>
+  </header>
+  
+  <section class="flex-item sidebar__left">
+  	<form  action="form.html" method="POST">
+  
+    <h4>Song Length:</h4>
+    <label for="song-length"></label>
+    <input type="range" name="song-length" min="0.00" max="10.00" step="0.5" value="11.00" />
+    
+    <h4>Artist:</h4>
+    <input name="artist" list="artist_name" />
+    <datalist id="artist_name">
+      <option value="Artist1">
+      <option value="Artist2">
+      <option value="Artist3">
+      <option value="Artist4">
+      <option value="Artist5">
+   </datalist>
+     
+  
+    <h4>Album:</h4>
+    <input name="album" list="album_name" />
+    <datalist id="album_name">
+      <option value="Album1">
+      <option value="Album2">
+      <option value="Album3">
+      <option value="Album4">
+      <option value="Album5">
+    </datalist>
+    
+  
+    <h4>Genre:</h4>
+    <input type="radio" name="genre" value="rock"> Rock
+    <input type="radio" name="genre" value="Classical"> Classical <br>
+    <input type="radio" name="genre" value="pop"> Pop
+    <input type="radio" name="genre" value="jazz"> Jazz <br>
+    <input type="radio" name="genre" value="blues"> Blues 
+    <input type="radio" name="genre" value="hip hop"> Hip Hop
+    <button type="submit">Filter</button>
+  
+</form>
+
+  </section>
+  
+
+
+
+
+  <section class="flex-item main">
+<ul>  
+
+  <h2 class="songTitle">Don't Let It Bring You Down</h2>
+    <li id = "song0"></li>
+  <h2 class="songTitle">Legs</h2>
+    <li id = "song1"></li>
+  <h2 class="songTitle">The Logical Song</h2>
+    <li id ="song2"></li>
+  <h2 class="songTitle">Another Brick in the Wall</h2>
+    <li id = "song3"></li>
+</ul>
+
+  </section>
+  
+  
+  <!-- <footer class="flex-item">Footer</footer> -->
+
+</html>
