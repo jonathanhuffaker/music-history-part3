@@ -1,3 +1,19 @@
+
+
+header {
+background-color: #ffb4b0;
+
+}
+
+nav ul li {
+  display:  inline-block;
+
+}
+ul {
+  list-style-type: none;
+}
+
+
 .flex-container {
   padding: 0;
   margin: 0;
@@ -10,37 +26,53 @@
 
 .flex-container > header{ 
   flex: 1 100%; 
-  /*display: inline-flex;*/
+  display: inline-flex;
   width: 100%;
   position: fixed;
 }
 
-.sidebar__left { 
-  flex-grow: 2;
-  margin-top: 6em;
-}
-
-ul {
-  list-style-type: none;
-  /*/*list-style: inline-flex;*/
-}
-
-.main {
-  flex-grow: 4;
-  margin-top: 5em;
-}
-
 .flex-item {  
-  background: tomato;
+  background: #FFB4B0 ;
+  /*// revmoved origina #FFB4B0*/
   padding: 10px;
    /*The width property here is important. Explain why */
   width: 100px;
   border: 3px solid rgba(0,0,0,.2);
+  /*border: 1px solid black;*/
 
-  
-  color: white;
+
+   color: #778899;
   font-weight: bold;
-  font-size: 2em;
-  font-family: arial;
+  font-size: 1.5em;
+  font-family: 'Roboto', sans-serif;
+  @import <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+  
+  
 
 }
+.sidebar__left { 
+  flex-grow: 2;
+  margin-top: 5em;
+  margin-right: 10px;
+  background:  #4DD7FA;
+}
+
+
+.unOrdFlexList article:nth-child(2n+1) {
+background: #FFF5EE;
+padding: 10px;
+}
+
+ul article:nth-child(2n+0) {
+  background: #F5FFFA;
+  padding: 10px;
+}
+
+.main {
+  flex-grow: 5;
+  margin-top: 5em;
+  background: #FEFAC0;
+
+
+}
+
